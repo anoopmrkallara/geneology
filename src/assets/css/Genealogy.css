@@ -1,0 +1,43 @@
+.genealogy {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .tree {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .name {
+    border: 1px solid #333;
+    padding: 5px;
+  }
+  
+  .children {
+    display: flex;
+  }
+  
+  .children > .node {
+    margin: 0 10px;
+  }
+  
+  .arrow-down {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+  }
+  
